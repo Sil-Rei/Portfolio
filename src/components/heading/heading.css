@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:wght@400;700&display=swap");
+.heading-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+  background-color: #99f7ff;
+  text-align: center;
+  user-select: none;
+}
+
+.heading-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+      at 34% 26%,
+      hsla(287, 68%, 61%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 18% 67%, hsla(213, 84%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 16%, hsla(257, 67%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 45%, hsla(244, 99%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 45% 9%, hsla(249, 64%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 90% 39%, hsla(309, 97%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 82% 31%, hsla(94, 70%, 68%, 1) 0px, transparent 50%);
+  background-size: 150% 150%;
+  animation: lavaLamp 10s ease-in-out infinite;
+}
+
+.heading-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/noiseTexture.png"); /* Replace 'noise.png' with the path to your grainy texture image */
+  opacity: 0.07; /* Adjust the opacity as desired */
+}
+
+@keyframes lavaLamp {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.heading-job-title {
+  color: white;
+  font-size: 1.7rem;
+  margin-bottom: -15px;
+  z-index: 3;
+}
+
+.heading-name {
+  font-size: 6rem;
+  color: white;
+  z-index: 3;
+  /* font-family: "Leckerli One", cursive; */
+}
+
+.cta-button-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  justify-content: flex-start;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  position: relative;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.cta-button svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+.cta-button rect {
+  fill: none;
+  stroke: white;
+  stroke-width: 5;
+  stroke-dasharray: 422, 0;
+}
+.cta-button:hover {
+  font-weight: 900;
+}
+.cta-button:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (max-width: 800px) {
+}

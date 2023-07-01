@@ -1,0 +1,56 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 0px 10vw;
+  max-width: 1200px;
+  transition: 0.3s all;
+}
+.about-me-header {
+  color: #333333;
+  margin: 20px 0;
+  font-size: 3rem;
+  transition: 0 all;
+}
+
+.me-image {
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+
+  object-fit: cover;
+  border-radius: 50%;
+
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #474747;
+  font-size: 1.05rem;
+  transition: 0.3s all;
+}
+
+@media (max-width: 800px) {
+  .info-wrapper {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .me-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.line {
+  margin-top: 70px;
+  height: 1px;
+  border: none;
+  background-color: black;
+  width: 70%;
+}

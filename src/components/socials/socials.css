@@ -1,0 +1,43 @@
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: 200px;
+}
+
+.socials-heading {
+  color: #333333;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.socials-icons {
+  margin-top: 50px;
+}
+
+.social-icon,
+.social-icon:visited {
+  display: inline-block;
+  font-size: 4rem;
+  color: rgb(43, 177, 226);
+  margin-right: 50px;
+  animation: wobble 2s infinite;
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.social-icon:nth-child(2) {
+  animation: wobble 2s 1s infinite;
+}
+
+.social-icon:nth-child(3) {
+  margin-right: 0px;
+}

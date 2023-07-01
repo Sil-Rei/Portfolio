@@ -1,0 +1,126 @@
+.project-container {
+  display: flex;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.blob {
+  position: absolute;
+  opacity: 0.7;
+  z-index: -5;
+
+  width: 400px;
+  height: 400px;
+  border-radius: 14rem;
+  background-image: radial-gradient(
+      at 34% 26%,
+      hsla(287, 68%, 61%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 18% 67%, hsla(213, 84%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 16%, hsla(257, 67%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 45%, hsla(244, 99%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 45% 9%, hsla(249, 64%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 90% 39%, hsla(309, 97%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 82% 31%, hsla(94, 70%, 68%, 1) 0px, transparent 50%);
+  background-blend-mode: darken, normal, normal, normal, normal, normal;
+  filter: blur(50px);
+}
+
+.project-image {
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgb(99, 99, 99);
+  transition: 0.3s all;
+}
+
+.project-image:hover {
+  transform: scale(1.03);
+}
+
+.project-title {
+  color: #333333;
+  font-size: 1.8rem;
+}
+
+.project-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.project-right {
+  flex-basis: 50%;
+  margin-top: 40px;
+  color: #333333;
+}
+
+.reversed-right {
+  margin-left: 80px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.project-button,
+.project-button:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 80px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: 0.8s all;
+  box-shadow: 2px 2px 5px 0px rgb(151, 152, 224);
+  text-decoration: none;
+}
+
+.project-button:hover {
+  background-color: rgb(54, 54, 54);
+  transform: translateY(-5px);
+  transition: 0.2s all;
+}
+
+.project-features {
+  list-style-type: disc;
+  color: #333333;
+}
+
+.project-features li {
+  margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .reversed-right {
+    margin-left: 0px;
+  }
+}
