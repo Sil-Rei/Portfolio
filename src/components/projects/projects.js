@@ -36,7 +36,7 @@ Angular Frontend, Django REST Backend"
             features={[
               "Login / register with captcha and email verification",
               "Password reset",
-              "Notificaton bar, system info and user events",
+              "Notification bar, system info and user events",
               "Create unlimited portfolios and simulate real stock performance",
               "Make your portfolios public and get votes",
             ]}
